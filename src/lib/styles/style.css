@@ -1,0 +1,12 @@
+.bg-gradient-soft {
+  background: linear-gradient(
+    135deg,
+    #c7e3ce 0%,
+    #b0e6e3 20%,
+    #caeeec 40%,
+    #e7f6f1 50%,
+    #caeeec 60%,
+    #b0e6e3 80%,
+    #c7e3ce 100%
+  );
+}

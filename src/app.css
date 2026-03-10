@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "flowbite";
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('src/lib/fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@theme {
+  --font-display: "Poppins", "sans-serif"; 
+  --emerald-a0: oklab(49.2% -0.083 -0.015);
+  --emerald-a10: oklab(88.6% -0.18 0.047);
+}
+
+:root {
+  --primary: #117e55;
+  --secondary: #41b3af;
+  --accent: #49a9c7;
+  --danger: #ee1c1d;
+  --darkblue: #304557;
+  --light: #f8f9f9;
+}
+
+main, button, div {
+  font-family: 'Poppins','Courier New', Courier, monospace;
+}
+
+.bg-gradient-soft {
+  background: linear-gradient(
+    135deg,
+    #c7e3ce 0%,
+    #b0e6e3 20%,
+    #caeeec 40%,
+    #e7f6f1 50%,
+    #caeeec 60%,
+    #b0e6e3 80%,
+    #c7e3ce 100%
+  );
+}
+
+.bg-baru {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.bg-danger {
+  background-color: var(--danger);
+}
+
+.bg-darkblue {
+  background-color: var(--darkblue);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-light-50 {
+  background-color: color-mix(in srgb, var(--light) 50%, transparent);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-darkblue {
+  color: var(--darkblue);
+}
+
+.text-light {
+  color: var(--light);
+}
